@@ -6,12 +6,12 @@ For more details about FUSO, please refer to our USENIX ATC 2016 paper "Fast and
 
 # How to use?
 ## Installation
-To get started fetch the MPTCP Linux kernel version used as the base for the patch set (here version v0.90):  
+To get started fetch the MPTCP Linux kernel version (v0.90) used as the base for the patch set:  
 `$ git clone git://github.com/multipath-tcp/mptcp`  
 `$ cd mptcp`  
 `$ git checkout tags/v0.90`
 
-Next, check out the patch files (or download them directly). Then copy them in the mptcp kernel folder and overwrite the original files.
+Next, download the patch files (i.e. the modified kernel code files). Then copy them in the mptcp kernel folder and overwrite the original files.
 
 Then, you need to compile and install the modified kernel. 
 
