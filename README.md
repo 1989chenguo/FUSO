@@ -2,7 +2,7 @@
 FUSO is a fast multi-path transport loss recovery scheme for data centers, which attempts to be both "fast" and "cautious".
 Currently, FUSO is a kernel transport implementation which is built upon [MPTCP’s Linux implementation (v0.90)](http://multipath-tcp.org/pmwiki.php?n=Main.Release90).
 
-For more details about FUSO, please refer to our USENIX ATC 2016 paper "Fast and Cautious: Leveraging Multi-path Diversity for Transport Loss Recovery in Data Centers"
+For more details about FUSO, please refer to our USENIX ATC 2016 paper ["Fast and Cautious: Leveraging Multi-path Diversity for Transport Loss Recovery in Data Centers"](http://netman.cs.tsinghua.edu.cn/~chenguo/FUSO-ATC16.pdf)
 
 # How to use?
 ## Installation
@@ -26,3 +26,6 @@ Note that you should first turn on MPTCP in order to use FUSO. How to configure 
 
 We have made a minor optimization for the original MPTCP receiving end. Enabling this feature can further improve FUSO's performance. To enable the receiver optimization:  
 `sysctl net.mptcp.mptcp_receive_ofo_optimize=1`
+
+## Contacting the author
+The current implementation has not been fully optimized. If you have any questions or suggestions, please email to chen-g11@tsinghua.edu.cn
